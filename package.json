@@ -21,6 +21,7 @@
 		"react-native": "0.73.6",
 		"react-native-fast-image": "^8.6.3",
 		"react-native-loader-kit": "^2.0.8",
+		"react-native-reanimated": "~3.6.2",
 		"react-native-safe-area-context": "4.8.2",
 		"react-native-screens": "~3.29.0",
 		"react-native-track-player": "^4.1.1"
