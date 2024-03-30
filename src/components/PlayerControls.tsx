@@ -1,6 +1,6 @@
 import { colors } from '@/constants/tokens'
 import { FontAwesome6 } from '@expo/vector-icons'
-import { TouchableOpacity, View, ViewStyle } from 'react-native'
+import { StyleSheet, TouchableOpacity, View, ViewStyle } from 'react-native'
 import TrackPlayer, { useIsPlaying } from 'react-native-track-player'
 
 type PlayerControlsProps = {
@@ -10,6 +10,20 @@ type PlayerControlsProps = {
 type PlayerButtonProps = {
 	style?: ViewStyle
 	iconSize?: number
+}
+
+export const PlayerControls = ({ style }: PlayerControlsProps) => {
+	return (
+		<View style={[styles.container, style]}>
+			<View style={styles.row}>
+				<SkipToPreviousButton />
+
+				<PlayPauseButton />
+
+				<SkipToNextButton />
+			</View>
+		</View>
+	)
 }
 
 export const PlayPauseButton = ({ style, iconSize = 48 }: PlayerButtonProps) => {
@@ -42,3 +56,14 @@ export const SkipToPreviousButton = ({ iconSize = 30 }: PlayerButtonProps) => {
 		</TouchableOpacity>
 	)
 }
+
+const styles = StyleSheet.create({
+	container: {
+		width: '100%',
+	},
+	row: {
+		flexDirection: 'row',
+		justifyContent: 'space-evenly',
+		alignItems: 'center',
+	},
+})
