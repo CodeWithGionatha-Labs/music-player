@@ -1,4 +1,4 @@
-import { TrackListItem } from '@/components/TrackListItem'
+import { TracksListItem } from '@/components/TracksListItem'
 import { unknownTrackImageUri } from '@/constants/images'
 import { useQueue } from '@/store/queue'
 import { utilsStyles } from '@/styles'
@@ -82,7 +82,7 @@ export const TracksList = ({
 				</View>
 			}
 			renderItem={({ item: track }) => (
-				<TrackListItem track={track} onTrackSelect={handleTrackSelect} />
+				<TracksListItem track={track} onTrackSelect={handleTrackSelect} />
 			)}
 			{...flatlistProps}
 		/>

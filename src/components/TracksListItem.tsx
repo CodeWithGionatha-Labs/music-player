@@ -9,12 +9,15 @@ import FastImage from 'react-native-fast-image'
 import LoaderKit from 'react-native-loader-kit'
 import { Track, useActiveTrack, useIsPlaying } from 'react-native-track-player'
 
-export type TrackListItemProps = {
+export type TracksListItemProps = {
 	track: Track
 	onTrackSelect: (track: Track) => void
 }
 
-export const TrackListItem = ({ track, onTrackSelect: handleTrackSelect }: TrackListItemProps) => {
+export const TracksListItem = ({
+	track,
+	onTrackSelect: handleTrackSelect,
+}: TracksListItemProps) => {
 	const { playing } = useIsPlaying()
 
 	const isActiveTrack = useActiveTrack()?.url === track.url
