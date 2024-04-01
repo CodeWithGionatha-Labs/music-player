@@ -25,6 +25,8 @@ export const useSetupTrackPlayer = ({ onLoad }: { onLoad?: () => void }) => {
 	const isInitialized = useRef(false)
 
 	useEffect(() => {
+		if (isInitialized.current) return
+
 		setupPlayer()
 			.then(() => {
 				isInitialized.current = true
