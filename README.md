@@ -1,8 +1,9 @@
-# Music Player
+# Music Player (native)
 
-A native music player application built with Expo, React Native, Typescript and Zustand. The design is inspired by the Apple Music app.
+A native music player application built with Expo, React Native, Typescript and Zustand. Design is inspired by Apple Music app.
 
-![Screenshot 2024-03-26 at 21 09 25 (2)](https://github.com/gionathas/music-player/assets/16454253/5747f2dd-aab2-476f-add9-ca7843887cba)
+You can follow along the development of this project here 👇
+[![Music PLayer](https://github.com/gionathas/music-player/assets/16454253/909c51e2-03f1-4fc8-94e6-56745f67fed8)](https://youtu.be/9CElrkFwiBU?si=PFgwCFDulxJJD2f4)
 
 ## Installation
 
